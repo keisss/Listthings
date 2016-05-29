@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/nav_menu_background"
+    android:gravity="right|bottom"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+<ImageView
+    android:layout_width="27dp"
+    android:layout_height="27dp"
+    android:src="@drawable/keiss"/>
+</LinearLayout>

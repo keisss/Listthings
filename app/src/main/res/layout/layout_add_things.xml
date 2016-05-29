@@ -1,0 +1,190 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    >
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar_without_elevation"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="?attr/colorPrimary"
+                android:id="@+id/etParentLY"
+                android:gravity="center"
+                android:elevation="4dip"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0.43"
+                android:weightSum="1">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/titleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:focusable="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/add_things_title"
+                        android:hint="@string/title"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="@android:color/secondary_text_light"
+                        android:gravity="start|bottom"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#054c99"
+                        android:imeOptions="actionDone"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/things_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <RadioButton
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="!!! "
+                    android:textColor="@color/design_textinput_error_color_light"
+                    android:id="@+id/radioButton_high"
+                    android:textSize="25sp"
+                    android:allowUndo="true"
+                    android:buttonTint="#2b2a2a" />
+                    <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="!! "
+                    android:id="@+id/radioButton_normal"
+                    android:layout_gravity="center|top"
+                    android:textSize="25sp"
+                    android:textColor="#ff8400"
+                    android:buttonTint="#2b2a2a" />
+                    <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="!    "
+                    android:id="@+id/radioButton_low"
+                    android:layout_gravity="right"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/holo_green_light"
+                    android:buttonTint="#2b2a2a" />
+                    </RadioGroup>
+
+
+                    <Spinner
+                        android:layout_gravity="right"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/set_things_class_spinner"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/todoReminderAndDateContainerLayout"
+
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="2.12"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.036">
+
+                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/add_things_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="0.96"
+                    android:hint="添加日程详细信息. . ."
+                    android:gravity="top|left"
+                    android:maxLines="16"
+                    android:lines="16"
+                    android:background="@drawable/edittext_none_line"
+                    android:textColor="@color/prueBlack"
+
+
+                    />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_gravity="center"
+                   >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/view_saved_pic"
+                        android:clickable="true"
+                        android:id="@+id/viewSavedPic"
+                        android:visibility="invisible"
+                        />
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_button_done"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_newthings_done"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/etParentLY"
+            app:layout_anchorGravity="bottom|right"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+
+            android:clickable="true"
+
+            android:focusable="true"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    </LinearLayout>
+

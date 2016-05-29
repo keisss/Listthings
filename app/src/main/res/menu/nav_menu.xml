@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/today_things"
+            android:icon="@drawable/ic_today_black_24px"
+
+            android:title="今日日程"
+            />
+        <item
+            android:id="@+id/all_things"
+            android:icon="@drawable/ic_event_note_black_24px"
+            android:checked="true"
+            android:title="所有日程" />
+        <item
+            android:id="@+id/calendar_mode"
+            android:icon="@drawable/ic_menu_calendar_mode"
+
+            android:title="日历视图" />
+    </group>
+
+    <item android:title="关于与帮助"
+        >
+        <menu>
+
+            <item
+                android:id="@+id/menu_about"
+                android:icon="@drawable/ic_menu_about"
+                android:title="关于" />
+        </menu>
+    </item>
+
+</menu>

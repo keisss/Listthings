@@ -17,7 +17,7 @@ allprojects {
         jcenter()
     }
 }
-
+678tiytiyu
 task clean(type: Delete) {
     delete rootProject.buildDir
 }erer

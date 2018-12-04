@@ -21,8 +21,4 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-<<<<<<< HEAD
-3421324
-=======
-qqq
->>>>>>> 3
+
